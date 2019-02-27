@@ -5,4 +5,7 @@
 		<p><%= place.description %></p><br />
 	</div>
 
-<% end %> 		
+
+<% end %> 
+
+<%= will_paginate @places, renderer: BootstrapPagination::Rails %>		
