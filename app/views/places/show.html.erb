@@ -97,10 +97,10 @@
 
 
 <!-- Trigger the modal with a button -->
-<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">Add a photo</button>
+<button type="button" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#photoModal">Add a photo</button>
 
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div class="modal fade" id="photoModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -122,8 +122,6 @@
     </div>
   </div>
 </div>       
-
-
 
 <div class="booyah-box">
  <% @place.photos.each do |photo| %>

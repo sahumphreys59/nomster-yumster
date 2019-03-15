@@ -20,6 +20,12 @@
   		</div>
 		<% end %>
 
+		<% if place.photos.present? %>
+			<div class="col-12">
+				<%= place.photos.last.picture %>
+			</div>
+		<% end %>		
+
 	</div>
 <% end %> 
 
