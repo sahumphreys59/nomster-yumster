@@ -40,7 +40,7 @@
 <div class="float-right">
   <% if current_user && current_user == @place.user %>
     <%= link_to 'Edit', edit_place_path(@place), class: 'btn btn-primary' %>
-    <%= link_to 'Destroy', place_path(@place), method: :delete, data:{comfirm: "Are you sure you want to delete this?"}, class: 'btn btn-danger' %>	
+    <%= link_to 'Destroy', place_path(@place), method: :destroy, data:{comfirm: "Are you sure you want to delete this?"}, class: 'btn btn-danger' %>	
   <% end %>
 </div>    
 
