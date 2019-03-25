@@ -58,15 +58,17 @@
     		</blockquote>
   		</div>
 		<% end %>
-   </div> 
+
+    <% if place.photos.present? %>
+      <div class="col-12 offset-3">
+        <%= image_tag(place.photos.last.picture.url) %>
+      </div>
+    <% end %>   
+    </div>
+  <% end %> 
+</div> 
 
 
-		<% if place.photos.present? %>
-		<div class="col-12 offset-3">
-				<%= image_tag(place.photos.last.picture.url) %>
-			</div>
-		<% end %>		
-	</div>
-<% end %> 
+		
 
 <%= will_paginate @places, renderer: WillPaginate::ActionView::BootstrapLinkRenderer %> 	
